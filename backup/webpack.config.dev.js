@@ -6,7 +6,7 @@ var InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin');
 var WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin');
 var getClientEnvironment = require('./env');
 var paths = require('./paths');
-const path = require('path')
+
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -25,10 +25,29 @@ module.exports = {
     // You may want 'eval' instead if you prefer to see the compiled output in DevTools.
     // See the discussion in https://github.com/facebookincubator/create-react-app/issues/343.
     devtool: 'cheap-module-source-map',
-    entry: './src/index.js',
     // These are the "entry points" to our application.
     // This means they will be the "root" imports that are included in JS bundle.
     // The first two entry points enable "hot" CSS and auto-refreshes for JS.
+    entry: [
+        // Include an alternative client for WebpackDevServer. A client's job is to
+        // connect to WebpackDevServer by a socket and get notified about changes.
+        // When you save a file, the client will either apply hot updates (in case
+        // of CSS changes), or refresh the page (in case of JS changes). When you
+        // make a syntax error, this client will display a syntax error overlay.
+        // Note: instead of the default WebpackDevServer client, we use a custom one
+        // to bring better experience for Create React App users. You can replace
+        // the line below with these two lines if you prefer the stock client:
+        // require.resolve('webpack-dev-server/client') + '?/',
+        // require.resolve('webpack/hot/dev-server'),
+        require.resolve('react-dev-utils/webpackHotDevClient'),
+        // We ship a few polyfills by default:
+        require.resolve('./polyfills'),
+        // Finally, this is your app's code:
+        paths.appIndexJs
+        // We include the app code last so that if there is a runtime error during
+        // initialization, it doesn't blow up the WebpackDevServer client, and
+        // changing JS code would still trigger a refresh.
+    ],
     output: {
         // Next line is not used in dev but WebpackDevServer crashes without it:
         path: paths.appBuild,
@@ -71,35 +90,88 @@ module.exports = {
             }
         ],
         loaders: [
+            // Default loader: load all assets that are not handled
+            // by other loaders with the url loader.
+            // Note: This list needs to be updated with every change of extensions
+            // the other loaders match.
+            // E.g., when adding a loader for a new supported file extension,
+            // we need to add the supported extension to this loader too.
+            // Add one new line in `exclude` for each loader.
+            //
+            // "file" loader makes sure those assets get served by WebpackDevServer.
+            // When you `import` an asset, you get its (virtual) filename.
+            // In production, they would get copied to the `build` folder.
+            // "url" loader works like "file" loader except that it embeds assets
+            // smaller than specified limit in bytes as data URLs to avoid requests.
+            // A missing `test` is equivalent to a match.
+            // {
+            //     exclude: [
+            //         /\.html$/,
+            //         /\.(js|jsx)$/,
+            //         /\.css$/,
+            //         /\.json$/,
+            //         /\.svg$/
+            //     ],
+            //     loader: 'url',
+            //     query: {
+            //         limit: 10000,
+            //         name: 'static/media/[name].[hash:8].[ext]'
+            //     }
+            // },
+            // Process JS with Babel.
+            // {
+            //     test: /\.(js|jsx)$/,
+            //     include: paths.appSrc,
+            //     loader: 'babel',
+            //     query: {
+            //
+            //         // This is a feature of `babel-loader` for webpack (not Babel itself).
+            //         // It enables caching results in ./node_modules/.cache/babel-loader/
+            //         // directory for faster rebuilds.
+            //         cacheDirectory: true
+            //     }
+            // },
             {
                 test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
-                loader:'babel-loader',
-                query: {
-                    presets: [
-                        'react',
-                        'node6'
-                    ],
-                    plugins: [
-                        ["transform-decorators-legacy"],
-                        ["transform-class-properties"],
-                        ["transform-es2015-destructuring"],
-                        ["transform-object-rest-spread"]
-                    ]
-                }
+                include: paths.appSrc,
+                loaders: ['react-hot', 'babel-loader'],
+                exclude: /node_modules/
             },
+            // "postcss" loader applies autoprefixer to our CSS.
+            // "css" loader resolves paths in CSS and adds assets as dependencies.
+            // "style" loader turns CSS into JS modules that inject <style> tags.
+            // In production, we use a plugin to extract that CSS to a file, but
+            // in development "style" loader enables hot editing of CSS.
             {
-                test: /\.css$/,
-                loader: 'style!css?importLoaders=1!postcss'
-                // loader: 'style-loader!css-loader'
+              test: /\.css$/,
+              loader: 'style!css?importLoaders=1!postcss'
             },
+            // {
+            //     test: /\.css$/,
+            //     loader: 'style-loader!css-loader'
+            // },
+            // {
+            //     test: /\.scss$/,
+            //     include: paths.appSrc,
+            //     loaders: ["style-loader", "css-loader", "sass-loader"]
+            // },
             {
                 test: /\.scss$/,
                 loaders: ['style', 'css?sourceMap', 'sass?sourceMap']
-                // loaders: ["style-loader", "css-loader", "sass-loader"]
             },
+            // {
+            //     test: /\.scss$/,
+            //     loaders: ["style", "css?sourceMap", "sass?sourceMap"]
+            // },
+            // JSON is not enabled by default in Webpack but both Node and Browserify
+            // allow it implicitly so we also enable it.
             {
-                test: /\.svg?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                test: /\.json$/,
+                loader: 'json'
+            },
+            // "file" loader for svg
+            {
+                test: /\.svg$/,
                 loader: 'file',
                 query: {
                     name: 'static/media/[name].[hash:8].[ext]'
@@ -119,21 +191,7 @@ module.exports = {
             {
                 test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url-loader'
-            }
-            // {
-            //     test: /\.(jpg|png)$/,
-            //     loader: 'url?limit=25000'
-            // },
-            // {
-            //     test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-            //     loader: "url-loader?limit=10000&mimetype=application/font-woff"
-            // },
-            // {test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"},
-            // {
-            //     test: /\.json$/,
-            //     exclude: /node_modules/,
-            //     loader: 'json',
-            // },
+            },
         ]
     },
 

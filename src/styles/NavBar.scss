@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+  .navbar-form  {
+    .form-control {
+      width: 249px !important;
+    }
+  }
+}
+
+.has-feedback  {
+  .form-control {
+    padding-left: 28.5px;
+  }
+}
+
+.form-control-feedback {
+  left: 0
+}
+
+.form-control {
+  border-radius: 2px !important;
+}
