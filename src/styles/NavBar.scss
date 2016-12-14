@@ -4,6 +4,14 @@
       width: 249px !important;
     }
   }
+  .navbar-nav > li > a {
+    padding-top: 26px!important;
+    padding-bottom: 26px!important;
+  }
+  .navbar-form {
+    padding-top: 11px!important;
+    padding-bottom: 11px!important;
+  }
 }
 
 .has-feedback  {
@@ -18,4 +26,14 @@
 
 .form-control {
   border-radius: 2px !important;
+}
+
+.navbar-brand {
+  height: auto !important;
+}
+
+.navbar-toggle {
+  margin-top: 19px !important;
+  margin-bottom: 19px !important;
+
 }

@@ -1,3 +1,67 @@
 #hot-manga {
 
 }
+.hot-manga-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0!important;
+  padding-right: 0!important;
+  .hot-manga-left-title {
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .hot-manga-right-title {
+    color: #00b3ee;
+    font-size: 12px;
+    text-align: right;
+  }
+}
+
+.hot-manga-content {
+  display: block;
+  ul {
+    list-style: none;
+  }
+  ul.ulListMangaHot {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0 0 0;
+    li {
+      float: left;
+      width: 20%;
+      padding: 2% 0% 2% 0%;
+      max-width: 338px;
+      //height: 193px;
+      overflow: hidden;
+      .divimgslide {
+        position: relative;
+        a {
+          i {
+            color: #00b3ee;
+          }
+        }
+        a.aimg_slide {
+          position: relative;
+          text-align: center;
+          color: #312f2f;
+          font-weight: bold;
+          line-height: 30px;
+          display: block;
+          //height: 184px;
+        }
+        a.atext {
+          width: 100%;
+          float: left;
+          line-height: 16px;
+          padding: 5px 0 5px 0;
+          font-size: 14px;
+          color: #333;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          //text-align: center;
+        }
+      }
+    }
+  }
+}

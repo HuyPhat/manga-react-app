@@ -119,6 +119,10 @@ module.exports = {
             {
                 test: /\.(ttf)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 loader: 'url-loader'
+            },
+            {
+                test: /\.json$/,
+                loader: 'json'
             }
             // {
             //     test: /\.(jpg|png)$/,

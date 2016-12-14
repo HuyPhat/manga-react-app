@@ -1,0 +1,14 @@
+{
+  "hotManga": [
+    {"id": 0, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 1, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 2, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 3, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 4, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 5, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 6, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 7, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 8, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"},
+    {"id": 9, "img_url": "images/hot/manga-name.jpg", "title": "Manga name", "chapter": "chapter"}
+  ]
+}

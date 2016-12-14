@@ -1,0 +1,12 @@
+{
+  "genres": [
+    {"id": 0, "title": "Action"},
+    {"id": 1, "title": "Doujinshi"},
+    {"id": 2, "title": "Adult"},
+    {"id": 3, "title": "Drama"},
+    {"id": 4, "title": "Adventure"},
+    {"id": 5, "title": "Ecchi"},
+    {"id": 6, "title": "Comedy"},
+    {"id": 7, "title": "Fantasy"}
+  ]
+}

@@ -8,7 +8,8 @@ html, body {
 }
 
 .site-header {
-  min-height: 50px;
+  //min-height: 50px;
+  min-height: 73px;
 }
 
 .site-content {
@@ -22,4 +23,9 @@ html, body {
 }
 .widget {
   background-color: #ffffff;
+  border: 1px solid #e6e6e6;
+  border-radius: 2px;
+  box-shadow: 1px 0 1px #e6e6e6;
+  padding-left:0 !important;
+  padding-right:0 !important;
 }

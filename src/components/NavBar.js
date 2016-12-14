@@ -10,7 +10,7 @@ const NavBar = () => {
         <Navbar inverse collapseOnSelect fixedTop fluid>
             <Navbar.Header>
                 <Navbar.Brand>
-                    <a href="#"><Image src="logomarca_mangahost.png" responsive /></a>
+                    <a href="#"><Image src="logo-manga-rock.jpg" responsive /></a>
                 </Navbar.Brand>
                 <Navbar.Toggle />
             </Navbar.Header>
@@ -20,13 +20,6 @@ const NavBar = () => {
                     <NavItem eventKey={2} href="#">ALL MANGA</NavItem>
                     <NavItem eventKey={2} href="#">LATEST UPDATES</NavItem>
                     <NavItem eventKey={2} href="#">DISCOVER</NavItem>
-                    {/*<NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">*/}
-                        {/*<MenuItem eventKey={3.1}>Action</MenuItem>*/}
-                        {/*<MenuItem eventKey={3.2}>Another action</MenuItem>*/}
-                        {/*<MenuItem eventKey={3.3}>Something else here</MenuItem>*/}
-                        {/*<MenuItem divider />*/}
-                        {/*<MenuItem eventKey={3.3}>Separated link</MenuItem>*/}
-                    {/*</NavDropdown>*/}
                 </Nav>
                 <Navbar.Form pullRight>
                     <FormGroup>
