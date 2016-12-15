@@ -5,7 +5,7 @@ import React from 'react'
 import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import App from './components/App'
 import Home from './components/Home'
-import ProductDetail from './components/ProductDetail'
+import ProductInfo from './components/ProductInfo'
 
 export default class AppRouter extends React.Component {
     render() {
@@ -13,7 +13,7 @@ export default class AppRouter extends React.Component {
             <Router history={browserHistory}>
                 <Route path="/" component={App}>
                     <IndexRoute component={Home}/>
-                    <Route path="productInfo" component={ProductDetail}/>
+                    <Route path="productInfo" component={ProductInfo}/>
                 </Route>
             </Router>
         )

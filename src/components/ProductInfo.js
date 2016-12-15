@@ -7,7 +7,7 @@ const ProductDetail = () => {
     return (
         <div className="container">
             <div className="row">
-                ProductDetail
+                ProductInfo
             </div>
         </div>
     )
