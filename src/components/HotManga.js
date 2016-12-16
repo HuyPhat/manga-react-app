@@ -17,7 +17,7 @@ class HotManga extends Component {
     render() {
         const {hotManga} = this.state
         return (
-            <Col xs={12} id="hot-manga" className="widget">
+            <Col xs={12} id="hot-manga" className="widget widget-1 widget-2 widget-hot-manga">
                 <Col xs={12} className="hot-manga-header">
                     <Col md={10} className="hot-manga-left-title">HOT MANGA UPDATES</Col>
                     <Col md={2} className="hot-manga-right-title">VIEW ALL</Col>
@@ -27,7 +27,7 @@ class HotManga extends Component {
                         {
                             hotManga.map((item, index) => {
                                 return (
-                                    <li key={index}><MangeSlide data={item}/></li>
+                                    <li key={index}><MangeSlide data={item} index={index+1}/></li>
                                 )
                             })
                         }

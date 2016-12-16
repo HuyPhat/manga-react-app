@@ -2,6 +2,11 @@ html, body {
   height: 100%;
 }
 
+body {
+  background-color: #e9ebee!important;
+  color: #1d2129!important;
+}
+
 .bs-docs-nav {
   background-color: #222;
   //color: #00b3ee;
@@ -23,9 +28,23 @@ html, body {
 }
 .widget {
   background-color: #ffffff;
-  border: 1px solid #e6e6e6;
-  border-radius: 2px;
-  box-shadow: 1px 0 1px #e6e6e6;
+  //border: 1px solid #e6e6e6;
+  //border-radius: 2px;
+  //box-shadow: 1px 0 1px #e6e6e6;
   padding-left:0 !important;
   padding-right:0 !important;
+}
+
+.widget-1 {
+  border: 1px solid;
+  border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  border-radius: 3px;
+}
+
+.widget-2 {
+  margin-bottom: 10px;
+}
+
+.widget-hot-manga {
+  padding-bottom: 40px;
 }

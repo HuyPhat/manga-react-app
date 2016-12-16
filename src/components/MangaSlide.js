@@ -4,15 +4,16 @@
 import React from 'react'
 import {Image} from 'react-bootstrap'
 
-const MangaSlide = ({data}) => {
+const MangaSlide = (props) => {
+    const classNames = props.index % 5 === 0 ? 'divimgslide last-slide' : 'divimgslide'
     return (
-        <div className="divimgslide">
-            <a className="aimg_slide" href={"/product-info/" + data.id} title="One Piece">
-                <Image alt="One Piece" src={data.img_url} responsive />
+        <div className={classNames}>
+            <a className="aimg_slide" href={"/product-info/" + props.data.id} title="One Piece">
+                <Image alt="One Piece" src={props.data.img_url} responsive />
             </a>
-            <a className="atext" href={"/product-info/" + data.id} title="One Piece">{data.title}</a>
-            <a className="atext" href={"/product-info/" + data.id} title="One Piece">{data.title}</a>
-            <a className="atext" href={"/product-info/" + data.id} title="One Piece"><i className="fa fa-circle" aria-hidden="true"></i> Chapter</a>
+            <a className="atext" href={"/product-info/" + props.data.id} title="One Piece">{props.data.title}</a>
+            <a className="atext" href={"/product-info/" + props.data.id} title="One Piece">{props.data.title}</a>
+            <a className="atext" href={"/product-info/" + props.data.id} title="One Piece"><i className="fa fa-circle" aria-hidden="true"></i> Chapter</a>
         </div>
     )
 }

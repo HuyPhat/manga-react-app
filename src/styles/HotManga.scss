@@ -3,7 +3,6 @@
 }
 .hot-manga-header {
   padding-top: 20px;
-  padding-bottom: 20px;
   padding-left: 0!important;
   padding-right: 0!important;
   .hot-manga-left-title {
@@ -19,6 +18,7 @@
 
 .hot-manga-content {
   display: block;
+  padding-right: 0!important;
   ul {
     list-style: none;
   }
@@ -29,12 +29,14 @@
     li {
       float: left;
       width: 20%;
-      padding: 2% 0% 2% 0%;
+      padding: 2% 0 0 0;
       max-width: 338px;
-      //height: 193px;
+      height: 272px;
+      max-height: 272px;
       overflow: hidden;
       .divimgslide {
         position: relative;
+        padding: 0 12px 0 0;
         a {
           i {
             color: #00b3ee;
@@ -62,6 +64,9 @@
           //text-align: center;
         }
       }
+      //.last-slide {
+      //  padding: 0;
+      //}
     }
   }
 }
