@@ -2,22 +2,43 @@
  * Created by phathuy on 12/13/16.
  */
 import React from 'react'
-// import {Carousel} from 'react-bootstrap'
-// import Slider from 'react-slick'
-// import 'slick-carousel/slick/slick.css'
-// import 'slick-carousel/slick/slick-theme.css'
+import {Carousel, Image} from 'react-bootstrap'
+import data from '../data/feature-collection.json'
 
-const FeaturedCollection = () => {
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1
+class FeaturedCollection extends React.Component {
+
+    state = {
+        index: 0,
+        direction: null,
+        features: data.features
     }
-    return (
-        <div></div>
-    )
+
+    handleSelect = (selectedIndex, e) => {
+        console.log('selected=' + selectedIndex + ', direction=' + e.direction)
+        this.setState({
+            index: selectedIndex,
+            direction: e.direction
+        })
+    }
+
+    render() {
+        const {features} = this.state
+        return (
+            <Carousel className="feature-carousel" activeIndex={this.state.index} direction={this.state.direction} onSelect={this.handleSelect}>
+                {
+                    features.map((item,index) =>
+                        <Carousel.Item key={item.id}>
+                            <Image src={item.url} responsive/>
+                            {/*<Carousel.Caption>*/}
+                                {/*<h3>First slide label</h3>*/}
+                                {/*<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>*/}
+                            {/*</Carousel.Caption>*/}
+                        </Carousel.Item>
+                    )
+                }
+            </Carousel>
+        )
+    }
 }
 
 export default FeaturedCollection

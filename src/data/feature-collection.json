@@ -1,0 +1,7 @@
+{
+  "features": [
+    {"id": 0, "url": "images/features/feature1.jpg"},
+    {"id": 1, "url": "images/features/feature1.jpg"},
+    {"id": 2, "url": "images/features/feature1.jpg"}
+  ]
+}

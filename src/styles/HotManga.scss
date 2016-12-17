@@ -7,7 +7,7 @@
   padding-right: 0!important;
   .hot-manga-left-title {
     font-size: 15px;
-    font-weight: bold;
+    //font-weight: bold;
   }
   .hot-manga-right-title {
     color: #00b3ee;
@@ -31,8 +31,8 @@
       width: 20%;
       padding: 2% 0 0 0;
       max-width: 338px;
-      height: 272px;
-      max-height: 272px;
+      height: 292px;
+      max-height: 292px;
       overflow: hidden;
       .divimgslide {
         position: relative;
@@ -40,6 +40,7 @@
         a {
           i {
             color: #00b3ee;
+            font-size: 10px;
           }
         }
         a.aimg_slide {

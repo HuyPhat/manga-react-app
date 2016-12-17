@@ -3,17 +3,19 @@
  */
 import React  from 'react'
 import {Grid,Row,Col} from 'react-bootstrap'
-// import FeaturedCollection from './FeaturedCollection'
+import FeaturedCollection from './FeaturedCollection'
 import HotManga from './HotManga'
 import MangaGenre from './MangaGenre'
+import LatestManga from './LatestManga'
 
 const Home = () => {
     return (
         <Grid>
-            <Row>FeatureCollection</Row>
+            <FeaturedCollection/>
             <Row>
                 <Col md={8}>
                     <HotManga/>
+                    <LatestManga/>
                 </Col>
                 <Col md={4}>
                     <MangaGenre/>

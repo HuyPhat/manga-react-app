@@ -1,0 +1,205 @@
+{
+  "latestManga": {
+    "headers": ["Manga","New chapters", "Date updated"],
+    "sheets": [
+      {
+        "id": 0,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 1,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 2,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 3,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 4,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 5,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 6,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 7,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 8,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 9,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 10,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 11,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 12,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 13,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 14,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 15,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 16,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      },
+      {
+        "id": 17,
+        "img_url": "images/latest/latest1.jpg",
+        "name": "Manga Name",
+        "amounts": "5 new chapter",
+        "newChapters": [
+          "Manga chapter 387",
+          "Manga chapter 386"
+        ],
+        "duration": "7 hours ago"
+      }
+    ]
+  }
+}

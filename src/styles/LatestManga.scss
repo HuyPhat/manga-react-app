@@ -1,0 +1,36 @@
+$padding-top: 12;
+
+#latest-manga,.widget-latest-manga {
+  .manga-thumbnail {
+    width: 80px;
+    display: inline-block;
+    margin-right: 20px;
+    padding: #{$padding-top}px 5px 12px 0;
+  }
+  .latest-manga-table {
+    margin-bottom: 0;
+    th {
+      font-weight: normal;
+      border: none;
+    }
+    tr>td>div.manga-name {
+      display: inline-block;
+    }
+    td {
+      padding-left: 5px;
+      border: none;
+      ul.latest-new-list {
+        padding: #{$padding-top + 18}px 0;
+        li {
+          .fa {
+            color: #00b3ee;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+    td.latest-manga-duration {
+      padding: #{$padding-top + 18 + 5}px 0px #{$padding-top + 18 + 5}px 14px;
+    }
+  }
+}

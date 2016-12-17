@@ -2,7 +2,8 @@
  * Created by phathuy on 12/14/16.
  */
 import React, {Component} from 'react'
-import {Grid, Row, Col} from 'react-bootstrap'
+// import {Col} from 'react-bootstrap'
+import MangaWidget from './MangaWidget'
 import MangeSlide from './MangaSlide'
 import '../styles/HotManga.scss'
 import data from '../data/hot-manga.json'
@@ -17,25 +18,17 @@ class HotManga extends Component {
     render() {
         const {hotManga} = this.state
         return (
-            <Col xs={12} id="hot-manga" className="widget widget-1 widget-2 widget-hot-manga">
-                <Col xs={12} className="hot-manga-header">
-                    <Col md={10} className="hot-manga-left-title">HOT MANGA UPDATES</Col>
-                    <Col md={2} className="hot-manga-right-title">VIEW ALL</Col>
-                </Col>
-                <Col xs={12} className="hot-manga-content">
-                    <ul className="ulListMangaHot">
-                        {
-                            hotManga.map((item, index) => {
-                                return (
-                                    <li key={index}><MangeSlide data={item} index={index+1}/></li>
-                                )
-                            })
-                        }
-                    </ul>
-                </Col>
-
-
-            </Col>
+            <MangaWidget title={"HOT MANGA UPDATES"}>
+                <ul className="ulListMangaHot">
+                    {
+                        hotManga.map((item, index) => {
+                            return (
+                                <li key={index}><MangeSlide data={item} index={index+1}/></li>
+                            )
+                        })
+                    }
+                </ul>
+            </MangaWidget>
         )
     }
 }
