@@ -7,6 +7,8 @@ import FeaturedCollection from './FeaturedCollection'
 import HotManga from './HotManga'
 import MangaGenre from './MangaGenre'
 import LatestManga from './LatestManga'
+import PopularManga from './PopularManga'
+import BeingRead from './BeingRead'
 
 const Home = () => {
     return (
@@ -18,7 +20,9 @@ const Home = () => {
                     <LatestManga/>
                 </Col>
                 <Col md={4}>
-                    <MangaGenre/>
+                    <Row><MangaGenre/></Row>
+                    <Row><PopularManga/></Row>
+                    <Row><BeingRead/></Row>
                 </Col>
             </Row>
         </Grid>

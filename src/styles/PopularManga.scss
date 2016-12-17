@@ -1,0 +1,31 @@
+.popular-widget {
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 20px;
+  .popular-header {
+    position: relative;
+    min-height: 38px;
+    .title {
+      display: inline-block;
+    }
+    .left-title {
+      float: left;
+    }
+    .right-title {
+      float: right;
+    }
+  }
+  .popular-body {
+    .popular-table {
+      tr>td.side {
+        padding: 30px 8px;
+      }
+    }
+    tbody > tr > td {
+      border-top: none;
+    }
+    .popular-detail {
+      display: inline-block;
+      padding-left: 10px;
+    }
+  }
+}
