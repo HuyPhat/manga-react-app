@@ -7,7 +7,7 @@ const ProductDetail = () => {
     return (
         <div className="container">
             <div className="row">
-                ProductInfo
+                <a href="/">Go back</a>
             </div>
         </div>
     )

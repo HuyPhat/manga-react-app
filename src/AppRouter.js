@@ -6,16 +6,25 @@ import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import App from './components/App'
 import Home from './components/Home'
 import ProductInfo from './components/ProductInfo'
+import NoMatch from './components/NoMatch'
 
-export default class AppRouter extends React.Component {
+class AppRouter extends React.Component {
+    constructor() {
+        super()
+    }
+
     render() {
         return (
             <Router history={browserHistory}>
                 <Route path="/" component={App}>
                     <IndexRoute component={Home}/>
-                    <Route path="productInfo" component={ProductInfo}/>
+                    {/*<Route path="home" component={Home}/>*/}
+                    <Route path="productInfo/:id" component={ProductInfo}/>
+                    <Route path="*" component={NoMatch}/>
                 </Route>
             </Router>
         )
     }
 }
+
+export default AppRouter
