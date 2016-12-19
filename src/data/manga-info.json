@@ -1,13 +1,15 @@
 {
   "info": {
     "id": 0,
-    "url": "images/latest/latest1.jpg",
+    "url": "/images/latest/latest1.jpg",
     "title": "Manga name",
-    "author": "Author name",
-    "chapters": "835",
-    "status": "Ongoing",
-    "rank": 4,
-    "reviews": 8,
+    "mega": {
+      "author": "Author name",
+      "chapters": 835,
+      "status": "Ongoing",
+      "rank": 4,
+      "reviews": 8
+    },
     "categories": [
       {"id": 0, "title": "Genre"},
       {"id": 1, "title": "Action"},

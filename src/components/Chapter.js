@@ -37,7 +37,8 @@ class Chapter extends React.Component {
                     {chapters.map((item,index) =>
                         <tr key={item.id}>
                             <td>
-                                <div><i className="fa fa-circle"/> {item.title}</div>
+                                {/*<div><i className="fa fa-circle"/> {item.title}</div>*/}
+                                <div>{item.title}</div>
                             </td>
                             <td colSpan="8"/>
                             <td className="duration-column">{item.duration} hour ago</td>

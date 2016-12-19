@@ -16,11 +16,11 @@ class FlexWidget extends React.Component {
                         {viewAll ? <Col md={2} className="right-title">VIEW ALL</Col> : null}
                     </Row>
                     <Row>
-                        <Col xs={12} className="hot-manga-content">
+                        <Col xs={12} className="content">
                             {this.props.children}
                         </Col>
                     </Row>
-                    {showMore ? <Col xs={12} className="genre-footer widget-footer text-center">SHOW MORE <Glyphicon glyph="triangle-bottom"/></Col> : null}
+                    <Row>{showMore ? <Col xs={12} className="genre-footer widget-footer text-center">SHOW MORE <Glyphicon glyph="triangle-bottom"/></Col> : null}</Row>
                 </Col>
             </Row>
         )

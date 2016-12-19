@@ -1,0 +1,79 @@
+.manga-info-container {
+  background-color: #fff;
+  padding: 20px 20px 0 20px;
+  .upper-part-container {
+    .info-title {
+      //font-size: 28px;
+      font-size: 1.4em;
+    }
+    .mega-info {
+      color: #555;
+    }
+    .info-rating {
+      padding-top: 6px;
+      .fill-yellow-star {
+        color: rgb(255, 239, 0);
+      }
+    }
+    .btn-container {
+      padding-top: 20px;
+      .btn {
+        display: inline-block;
+        font-weight: 400;
+        line-height: 1.25;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .5rem 1rem;
+        font-size: 14px;
+        border-radius: .25rem;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .btn-outline-primary {
+        color: #0275d8;
+        background-image: none;
+        background-color: transparent;
+        border-color: #0275d8;
+        &:hover {
+          color: #fff;
+          background-color: #0275d8;
+          border-color: #0275d8;
+        }
+      }
+    }
+  }
+  .category-btn-container {
+    padding-top: 20px;
+    .btn {
+      margin-right: 9px;
+    }
+    .btn-category {
+      background-color: #ccc;
+      &:hover {
+        border-color: #ccc;
+        background-color: rgba(204, 204, 204, 0.82);
+      }
+    }
+  }
+  .description-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .more-info-container {
+    padding: 12px;
+    background-color: #f9f9f9;
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: center;
+    color: #00b3ee;
+    font-size: 12px;
+  }
+}
