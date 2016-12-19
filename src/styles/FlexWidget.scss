@@ -1,0 +1,31 @@
+.flex-widget {
+  background-color: #ffffff;
+  margin-top: 20px;
+  .flex-container {
+    padding-left: 0;
+    .left-title {
+      padding: 10px 20px 10px 30px;;
+    }
+    .product-info-table > tbody > tr > td {
+      padding-left: 16px;
+    }
+    .product-info-table > tbody > tr:nth-of-type(even) {
+       background-color: #f9f9f9;
+    }
+    .product-info-table > tbody > tr:nth-of-type(odd) {
+      background-color: #ffffff;
+    }
+    .product-info-table {
+      .fa {
+        font-size: 10px;
+        color: #00b3ee;
+      }
+      td.duration-column {
+        text-align: right;
+      }
+      td.chapter-number {
+        color: #00b3ee;
+      }
+    }
+  }
+}
