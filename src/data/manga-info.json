@@ -1,0 +1,18 @@
+{
+  "info": {
+    "id": 0,
+    "url": "images/latest/latest1.jpg",
+    "title": "Manga name",
+    "author": "Author name",
+    "chapters": "835",
+    "status": "Ongoing",
+    "rank": 4,
+    "reviews": 8,
+    "categories": [
+      {"id": 0, "title": "Genre"},
+      {"id": 1, "title": "Action"},
+      {"id": 2, "title": "Comedy"}
+    ],
+    "description": "Twelve years ago, the Nine-Tailed Demon Fox devastated the shinobi village of Konohagakure, and was only stopped when the village's leader, the Fourth Hokage, gave up his life to seal it within the body of an infant: Naruto Uzumaki."
+  }
+}
