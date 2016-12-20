@@ -2,8 +2,7 @@
  * Created by phathuy on 12/14/16.
  */
 import React, {Component} from 'react'
-import {Grid, Row, Col, Glyphicon} from 'react-bootstrap'
-import classNames from 'classnames'
+import {Col, Glyphicon} from 'react-bootstrap'
 import '../styles/MangaGenre.scss'
 import data from '../data/genre.json'
 

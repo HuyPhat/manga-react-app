@@ -15,7 +15,7 @@ const ProductDetail = (props) => {
     const paramId = props.params.id
     console.log(paramId)
     const data = response.data.mangaList.find((manga) => {
-        return manga.id === parseInt(paramId)
+        return manga.id === parseInt(paramId,10)
     })
     console.log(data)
     return (

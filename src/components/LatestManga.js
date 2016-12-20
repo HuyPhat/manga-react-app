@@ -3,7 +3,7 @@
  */
 import React, {Component} from 'react'
 import MangaWidget from './MangaWidget'
-import {Col, Table, Image, Glyphicon} from 'react-bootstrap'
+import {Table, Image} from 'react-bootstrap'
 import '../styles/LatestManga.scss'
 import data from '../data/latest-manga.json'
 

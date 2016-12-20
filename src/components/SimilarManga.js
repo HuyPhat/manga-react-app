@@ -5,13 +5,9 @@ import React, {Component} from 'react'
 import {Row,Col,Image} from 'react-bootstrap'
 import FlexWidget from './shared/FlexWidget'
 import Divider from './Divider'
-import data from '../data/similar-manga.json'
 import '../styles/SimilarManga.scss'
 
 export default class SimilarManga extends Component {
-    constructor() {
-        super()
-    }
 
     render() {
         const {data} = this.props

@@ -2,7 +2,7 @@
  * Created by phathuy on 12/18/16.
  */
 import React from 'react'
-import {Table,Col} from 'react-bootstrap'
+import {Table} from 'react-bootstrap'
 import data from '../data/popular-manga.json'
 import '../styles/PopularManga.scss'
 
@@ -29,7 +29,7 @@ class PopularManga extends React.Component {
                                 popularManga.map((item, index) =>
                                     <tr key={index}>
                                         <td className="side">{index + 1}</td>
-                                        <td><a href={`/productInfo/${item.id}`}><img width={80} height={'auto'} className="" src={item.url}/></a></td>
+                                        <td><a href={`/productInfo/${item.id}`}><img width={80} height={'auto'} role="presentation" src={item.url}/></a></td>
                                         <td className="side">
                                             <div>{item.title}</div>
                                             <div>{item.author}</div>

@@ -5,14 +5,10 @@ import React, {Component} from 'react'
 import {Row,Col} from 'react-bootstrap'
 import FlexWidget from './shared/FlexWidget'
 import Divider from './Divider'
-import data from '../data/other-facts.json'
 import moment from 'moment'
 import '../styles/OtherFacts.scss'
 
 export default class OtherFacts extends Component {
-    constructor() {
-        super()
-    }
 
     render() {
         const {otherFacts} = this.props

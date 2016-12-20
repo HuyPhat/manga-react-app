@@ -3,7 +3,7 @@
  */
 import React from 'react'
 import {Navbar, Nav, NavItem, Image, FormGroup, FormControl, Glyphicon} from 'react-bootstrap'
-import {Router, Route, IndexRoute, browserHistory, Link} from 'react-router'
+import {browserHistory} from 'react-router'
 import '../styles/NavBar.scss'
 
 export default class NavBar extends React.Component {

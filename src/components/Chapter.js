@@ -3,19 +3,9 @@
  */
 import React from 'react'
 import {Table} from 'react-bootstrap'
-// import MangaWidget from './MangaWidget'
 import FlexWidget from './shared/FlexWidget'
-import data from '../data/chapter.json'
 
 class Chapter extends React.Component {
-
-    constructor() {
-        super()
-        // this.state = {
-        //     chapters: data.chapter
-        // }
-    }
-
     render() {
         const {chapters} = this.props
         return (

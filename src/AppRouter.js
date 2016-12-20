@@ -9,10 +9,6 @@ import ProductDetail from './components/ProductDetail'
 import NoMatch from './components/NoMatch'
 
 class AppRouter extends React.Component {
-    constructor() {
-        super()
-    }
-
     render() {
         return (
             <Router history={browserHistory}>

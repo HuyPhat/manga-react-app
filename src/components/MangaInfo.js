@@ -4,12 +4,8 @@
 import React from 'react'
 import {Image, Glyphicon, Button, Row, Col} from 'react-bootstrap'
 import '../styles/MangaInfo.scss'
-import data from '../data/manga-info.json'
 
 class MangaInfo extends React.Component {
-    constructor() {
-        super()
-    }
 
     render() {
         const {info} = this.props

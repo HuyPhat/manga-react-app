@@ -5,14 +5,9 @@ import React, {Component} from 'react'
 import {Row,Col,Image,Glyphicon} from 'react-bootstrap'
 import FlexWidget from './shared/FlexWidget'
 import Divider from './Divider'
-import data from '../data/related-collection.json'
 import '../styles/RelatedCollection.scss'
 
 export default class RelatedCollection extends Component {
-    constructor() {
-        super()
-    }
-
     render() {
         const {data} = this.props
         return (
