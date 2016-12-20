@@ -1,0 +1,18 @@
+{
+  "reviews": {
+    "meta": {
+      "averageScore": 4.1,
+      "reviewsCount": 8,
+      "qualityList": [
+        {"title": "Art Style", "percentage": "100"},
+        {"title": "Story", "percentage": "25"},
+        {"title": "Scan Quality", "percentage": "45"},
+        {"title": "Release Speed", "percentage": "75"}
+      ]
+    },
+    "comments": [
+      {"id": 0, "url": "/images/reviews/metacritics.jpg", "name": "Metacritics", "ratings": "4", "createdTime": "1499126400", "content": "aaaaaaa"},
+      {"id": 1, "url": "/images/reviews/myanimelist.jpg", "name": "MyAnimeList", "ratings": "4", "createdTime": "1499126400", "content": "aaaaaaa"}
+    ]
+  }
+}

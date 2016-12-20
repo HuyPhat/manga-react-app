@@ -1,0 +1,8 @@
+{
+  "similarManga": [
+    {"id":0, "url":"/images/similar/similarManga1.jpg", "title": "Manga name", "author": "Author name", "chapterCount": 835},
+    {"id":1, "url":"/images/similar/similarManga2.jpg", "title": "Manga name", "author": "Author name", "chapterCount": 835},
+    {"id":2, "url":"/images/similar/similarManga1.jpg", "title": "Manga name", "author": "Author name", "chapterCount": 835},
+    {"id":3, "url":"/images/similar/similarManga2.jpg", "title": "Manga name", "author": "Author name", "chapterCount": 835}
+  ]
+}

@@ -6,6 +6,7 @@ import {Grid,Row,Col,Image} from 'react-bootstrap'
 import Chapter from './Chapter'
 import MangaInfo from './MangaInfo'
 import OtherFacts from './OtherFacts'
+import SimilarManga from './SimilarManga'
 
 const ProductDetail = () => {
     const bannerImageStyle = {"paddingLeft":0,"paddingRight":0}
@@ -22,6 +23,7 @@ const ProductDetail = () => {
                     </Col>
                     <Col xs={12} md={4}>
                         <OtherFacts/>
+                        <SimilarManga/>
                     </Col>
                 </Row>
             </Grid>
