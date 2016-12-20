@@ -7,6 +7,7 @@ import Chapter from './Chapter'
 import MangaInfo from './MangaInfo'
 import OtherFacts from './OtherFacts'
 import SimilarManga from './SimilarManga'
+import RelatedCollection from './RelatedCollection'
 
 const ProductDetail = () => {
     const bannerImageStyle = {"paddingLeft":0,"paddingRight":0}
@@ -24,6 +25,7 @@ const ProductDetail = () => {
                     <Col xs={12} md={4}>
                         <OtherFacts/>
                         <SimilarManga/>
+                        <RelatedCollection/>
                     </Col>
                 </Row>
             </Grid>

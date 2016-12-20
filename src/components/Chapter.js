@@ -20,7 +20,7 @@ class Chapter extends React.Component {
         const {chapters} = this.state
         return (
             <FlexWidget title={"CHAPTERS"} showMore={true}>
-                <Table className="product-info-table" striped condensed hover>
+                <Table className="product-info-table" striped condensed hover responsive>
                     <tbody>
                     <tr>
                         <td>Jump to chapter</td>

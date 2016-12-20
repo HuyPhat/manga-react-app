@@ -4,6 +4,7 @@
     background-color: #ffffff;
     .left-title {
       padding: 10px 15px;
+      font-weight: 700;
     }
     .product-info-table > tbody > tr > td {
       padding-left: 16px;
@@ -27,6 +28,9 @@
       }
     }
     .content {
+      .bold-text {
+        font-weight: 700;
+      }
     }
   }
   .no-background {
