@@ -5,7 +5,7 @@ import React from 'react'
 import {Router, Route, IndexRoute, browserHistory} from 'react-router'
 import App from './components/App'
 import Home from './components/Home'
-import ProductInfo from './components/ProductInfo'
+import ProductDetail from './components/ProductDetail'
 import NoMatch from './components/NoMatch'
 
 class AppRouter extends React.Component {
@@ -18,8 +18,7 @@ class AppRouter extends React.Component {
             <Router history={browserHistory}>
                 <Route path="/" component={App}>
                     <IndexRoute component={Home}/>
-                    {/*<Route path="home" component={Home}/>*/}
-                    <Route path="productInfo/:id" component={ProductInfo}/>
+                    <Route path="productInfo/:id" component={ProductDetail}/>
                     <Route path="*" component={NoMatch}/>
                 </Route>
             </Router>

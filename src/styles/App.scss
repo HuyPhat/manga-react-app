@@ -9,12 +9,11 @@ body {
 
 .bs-docs-nav {
   background-color: #222;
-  //color: #00b3ee;
 }
 
 .site-header {
-  //min-height: 50px;
-  min-height: 73px;
+  height: 50px;
+  min-height: 50px;
 }
 
 .site-content {
@@ -29,9 +28,6 @@ body {
 }
 .widget {
   background-color: #ffffff;
-  //border: 1px solid #e6e6e6;
-  //border-radius: 2px;
-  //box-shadow: 1px 0 1px #e6e6e6;
   padding-left:0 !important;
   padding-right:0 !important;
 }
@@ -47,7 +43,6 @@ body {
 }
 
 .widget-hot-manga {
-  //padding-bottom: 40px;
 }
 
 .widget-footer {

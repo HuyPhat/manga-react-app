@@ -11,13 +11,10 @@ import '../styles/RelatedCollection.scss'
 export default class RelatedCollection extends Component {
     constructor() {
         super()
-        this.state = {
-            data: data.relatedCollection
-        }
     }
 
     render() {
-        const {data} = this.state
+        const {data} = this.props
         return (
             <FlexWidget title="RELATED COLLECTIONS" backgroundColor={false}>
                 {

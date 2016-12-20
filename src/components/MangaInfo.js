@@ -9,14 +9,10 @@ import data from '../data/manga-info.json'
 class MangaInfo extends React.Component {
     constructor() {
         super()
-        this.state = {
-            info: data.info
-        }
     }
 
     render() {
-        const {info} = this.state
-        console.log(info)
+        const {info} = this.props
         let rating = []
         for (let index = 0; index < info.mega.rank; index++) {
             rating.push(<Glyphicon key={index} glyph="star" className="fill-yellow-star"/>)

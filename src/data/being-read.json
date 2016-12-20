@@ -1,14 +1,14 @@
 {
   "beingRead": [
-    {"id": 0, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 1, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 2, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 3, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 4, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 5, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 6, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 7, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 8, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"},
-    {"id": 9, "url": "images/hot/manga-name.jpg", "title": "Manga name", "author": "Author name"}
+    {"id": 0, "url": "images/hot/battle-field-running.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 1, "url": "images/hot/naruto.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 0, "url": "images/hot/battle-field-running.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 1, "url": "images/hot/naruto.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 0, "url": "images/hot/battle-field-running.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 1, "url": "images/hot/naruto.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 0, "url": "images/hot/battle-field-running.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 1, "url": "images/hot/naruto.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 0, "url": "images/hot/battle-field-running.jpg", "title": "Manga name", "author": "Author name"},
+    {"id": 1, "url": "images/hot/naruto.jpg", "title": "Manga name", "author": "Author name"}
   ]
 }

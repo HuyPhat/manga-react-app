@@ -12,13 +12,10 @@ import '../styles/OtherFacts.scss'
 export default class OtherFacts extends Component {
     constructor() {
         super()
-        this.state = {
-            otherFacts: data.data
-        }
     }
 
     render() {
-        const {otherFacts} = this.state
+        const {otherFacts} = this.props
         const formattedLastUpdated = moment.unix(otherFacts.lastUpdated).format("MMMM DD, YYYY")
         const formattedFirstPublished = moment.unix(otherFacts.firstPublished).format("MMMM DD, YYYY")
         let languageInstances = []

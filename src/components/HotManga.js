@@ -12,7 +12,7 @@ class HotManga extends Component {
     constructor() {
         super()
         this.state = {
-            hotManga: data.hotManga
+            hotManga: data.hotManga1
         }
     }
     render() {

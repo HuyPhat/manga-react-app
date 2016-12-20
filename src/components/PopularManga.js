@@ -27,7 +27,7 @@ class PopularManga extends React.Component {
                             <tbody>
                             {
                                 popularManga.map((item, index) =>
-                                    <tr key={item.id}>
+                                    <tr key={index}>
                                         <td className="side">{index + 1}</td>
                                         <td><a href={`/productInfo/${item.id}`}><img width={80} height={'auto'} className="" src={item.url}/></a></td>
                                         <td className="side">

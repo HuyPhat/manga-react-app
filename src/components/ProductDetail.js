@@ -8,24 +8,31 @@ import MangaInfo from './MangaInfo'
 import OtherFacts from './OtherFacts'
 import SimilarManga from './SimilarManga'
 import RelatedCollection from './RelatedCollection'
+import response from '../data/product-detail.json'
 
-const ProductDetail = () => {
+const ProductDetail = (props) => {
     const bannerImageStyle = {"paddingLeft":0,"paddingRight":0}
+    const paramId = props.params.id
+    console.log(paramId)
+    const data = response.data.mangaList.find((manga) => {
+        return manga.id === parseInt(paramId)
+    })
+    console.log(data)
     return (
         <div>
             <Grid fluid style={bannerImageStyle}>
-                <Image src="/images/productInfo/product-info.jpg" responsive/>
+                <Image src={data.info.banner_url} responsive/>
             </Grid>
             <Grid>
                 <Row>
                     <Col xs={12} md={8}>
-                        <MangaInfo/>
-                        <Chapter/>
+                        <MangaInfo info={data.info}/>
+                        <Chapter chapters={data.chapters}/>
                     </Col>
                     <Col xs={12} md={4}>
-                        <OtherFacts/>
-                        <SimilarManga/>
-                        <RelatedCollection/>
+                        <OtherFacts otherFacts={data.facts}/>
+                        <SimilarManga data={data.similarManga}/>
+                        <RelatedCollection data={data.relatedCollection}/>
                     </Col>
                 </Row>
             </Grid>

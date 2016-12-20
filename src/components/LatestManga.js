@@ -29,7 +29,7 @@ class LatestManga extends Component {
                     </thead>
                     <tbody>
                     {latestManga.sheets.map((item,index) =>
-                        <tr key={item.id}>
+                        <tr key={index}>
                             <td>
                                 <a href={`/productInfo/${item.id}`}><Image className="manga-thumbnail" src={item.img_url} responsive /></a>
                                 <div className="manga-name">
@@ -47,7 +47,6 @@ class LatestManga extends Component {
                             <td className="latest-manga-duration">{item.duration}</td>
                         </tr>
                     )}
-                    {/*<tr><td colSpan={3}>SHOW MORE <Glyphicon glyph="triangle-bottom"/></td></tr>*/}
                     </tbody>
                 </Table>
             </MangaWidget>

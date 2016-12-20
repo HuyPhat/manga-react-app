@@ -11,13 +11,10 @@ import '../styles/SimilarManga.scss'
 export default class SimilarManga extends Component {
     constructor() {
         super()
-        this.state = {
-            data: data.similarManga
-        }
     }
 
     render() {
-        const {data} = this.state
+        const {data} = this.props
         return (
             <FlexWidget title="SIMILAR MANGA" backgroundColor={false}>
                 {

@@ -11,13 +11,13 @@ class Chapter extends React.Component {
 
     constructor() {
         super()
-        this.state = {
-            chapters: data.chapter
-        }
+        // this.state = {
+        //     chapters: data.chapter
+        // }
     }
 
     render() {
-        const {chapters} = this.state
+        const {chapters} = this.props
         return (
             <FlexWidget title={"CHAPTERS"} showMore={true}>
                 <Table className="product-info-table" striped condensed hover responsive>

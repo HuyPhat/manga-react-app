@@ -10,5 +10,17 @@
     {"id": 7, "img_url": "images/latest/latest1.jpg", "title": "Manga name", "chapter": "chapter"},
     {"id": 8, "img_url": "images/latest/latest1.jpg", "title": "Manga name", "chapter": "chapter"},
     {"id": 9, "img_url": "images/latest/latest1.jpg", "title": "Manga name", "chapter": "chapter"}
+  ],
+  "hotManga1": [
+    {"id": 0, "img_url": "images/hot/battle-field-running.jpg", "title": "Battle Field Running", "chapter": "chapter"},
+    {"id": 1, "img_url": "images/hot/naruto.jpg", "title": "Naruto", "chapter": "chapter"},
+    {"id": 0, "img_url": "images/hot/battle-field-running.jpg", "title": "Battle Field Running", "chapter": "chapter"},
+    {"id": 1, "img_url": "images/hot/naruto.jpg", "title": "Naruto", "chapter": "chapter"},
+    {"id": 0, "img_url": "images/hot/battle-field-running.jpg", "title": "Battle Field Running", "chapter": "chapter"},
+    {"id": 1, "img_url": "images/hot/naruto.jpg", "title": "Naruto", "chapter": "chapter"},
+    {"id": 0, "img_url": "images/hot/battle-field-running.jpg", "title": "Battle Field Running", "chapter": "chapter"},
+    {"id": 1, "img_url": "images/hot/naruto.jpg", "title": "Naruto", "chapter": "chapter"},
+    {"id": 0, "img_url": "images/hot/battle-field-running.jpg", "title": "Battle Field Running", "chapter": "chapter"},
+    {"id": 1, "img_url": "images/hot/naruto.jpg", "title": "Naruto", "chapter": "chapter"}
   ]
 }

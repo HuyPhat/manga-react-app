@@ -15,10 +15,10 @@ export default class NavBar extends React.Component {
 
     render() {
         return (
-            <Navbar inverse collapseOnSelect fixedTop fluid>
+            <Navbar className="manga-navbar" inverse collapseOnSelect fixedTop fluid>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="/"><Image src="/logo-manga-rock.jpg" responsive /></a>
+                        <a href="/"><Image src="/logo-manga-rock.jpg" /></a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
