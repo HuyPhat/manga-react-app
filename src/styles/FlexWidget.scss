@@ -2,9 +2,9 @@
   background-color: #ffffff;
   margin-top: 20px;
   .flex-container {
-    //padding-left: 0;
+    background-color: #ffffff;
     .left-title {
-      padding: 10px 0px 10px 15px;
+      padding: 10px 15px;
     }
     .product-info-table > tbody > tr > td {
       padding-left: 16px;
@@ -28,8 +28,6 @@
       }
     }
     .content {
-      padding-left: 0;
-      padding-right: 0;
     }
   }
 }

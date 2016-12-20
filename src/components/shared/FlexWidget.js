@@ -9,8 +9,8 @@ class FlexWidget extends React.Component {
     render() {
         const {title, showMore, viewAll} = this.props
         return (
-            <Row className="flex-widget">
-                <Col xs={12} className="flex-container">
+            <div className="flex-widget">
+                <Col xs={12} className="flex-container widget-1">
                     <Row>
                         <Col md={10} className="left-title">{title}</Col>
                         {viewAll ? <Col md={2} className="right-title">VIEW ALL</Col> : null}
@@ -22,7 +22,7 @@ class FlexWidget extends React.Component {
                     </Row>
                     <Row>{showMore ? <Col xs={12} className="genre-footer widget-footer text-center">SHOW MORE <Glyphicon glyph="triangle-bottom"/></Col> : null}</Row>
                 </Col>
-            </Row>
+            </div>
         )
     }
 }

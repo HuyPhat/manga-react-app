@@ -25,7 +25,7 @@ class MangaInfo extends React.Component {
             rating.push(<Glyphicon key={index} glyph="star"/>)
         }
         return (
-            <Row className="manga-info-container">
+            <div className="manga-info-container widget-1">
                 <Row>
                     <Col xs={4}>
                         <Image src={info.url} responsive />
@@ -54,7 +54,7 @@ class MangaInfo extends React.Component {
                 <Row className="more-info-container">
                     <Col xs={12}>MORE INFO <Glyphicon glyph="triangle-bottom"/></Col>
                 </Row>
-            </Row>
+            </div>
         )
     }
 }
