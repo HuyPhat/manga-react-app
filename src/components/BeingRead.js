@@ -28,7 +28,7 @@ class BeingRead extends React.Component {
                             beingRead.map((item, index) =>
                                 <tr key={item.id}>
                                     <td>
-                                        <img width={50} height={'auto'} className="" src={item.url}/>
+                                        <a href={`/productInfo/${item.id}`}><img width={50} height={'auto'} className="" src={item.url}/></a>
                                         <div className="popular-detail">
                                             <div>{item.title}</div>
                                             <div>{item.author}</div>

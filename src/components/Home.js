@@ -20,9 +20,9 @@ const Home = () => {
                     <LatestManga/>
                 </Col>
                 <Col md={4}>
-                    <Row><MangaGenre/></Row>
-                    <Row><PopularManga/></Row>
-                    <Row><BeingRead/></Row>
+                    <MangaGenre/>
+                    <PopularManga/>
+                    <BeingRead/>
                 </Col>
             </Row>
         </Grid>

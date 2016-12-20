@@ -1,17 +1,22 @@
 .popular-widget {
   border-bottom: 1px solid #ddd;
   margin-bottom: 20px;
+  width: 100%;
+  float: left;
   .popular-header {
     position: relative;
     min-height: 38px;
     .title {
       display: inline-block;
+      font-weight: 700;
     }
     .left-title {
       float: left;
     }
     .right-title {
       float: right;
+      color: #00b3ee;
+      font-size: 12px;
     }
   }
   .popular-body {

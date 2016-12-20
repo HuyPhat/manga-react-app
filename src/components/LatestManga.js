@@ -31,7 +31,7 @@ class LatestManga extends Component {
                     {latestManga.sheets.map((item,index) =>
                         <tr key={item.id}>
                             <td>
-                                <Image className="manga-thumbnail" src={item.img_url} responsive />
+                                <a href={`/productInfo/${item.id}`}><Image className="manga-thumbnail" src={item.img_url} responsive /></a>
                                 <div className="manga-name">
                                     <div>{item.name}</div>
                                     <div>{item.amounts}</div>

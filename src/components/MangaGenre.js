@@ -18,7 +18,7 @@ class MangaGenre extends Component {
     render() {
         const {genres} = this.state
         return (
-            <Col xs={12} id="manga-genre" className="widget">
+            <Col xs={12} id="manga-genre" className="widget widget-1">
                 <Col xs={12} className="genre-header">BROWSE MANGA BY GENRES</Col>
                 {genres.map((item, i) => {
                     return (

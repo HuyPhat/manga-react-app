@@ -13,8 +13,8 @@ class MangaWidget extends React.Component {
             <Col>
                 <Col xs={12} className="widget widget-1 widget-2 widget-hot-manga widget-latest-manga">
                     <Col xs={12} className="hot-manga-header">
-                        <Col md={10} className="hot-manga-left-title">{title}</Col>
-                        <Col md={2} className="hot-manga-right-title">VIEW ALL</Col>
+                        <Col xs={10} className="hot-manga-left-title">{title}</Col>
+                        <Col xs={2} className="hot-manga-right-title">VIEW ALL</Col>
                     </Col>
                     <Col xs={12} className="hot-manga-content">
                         {this.props.children}
