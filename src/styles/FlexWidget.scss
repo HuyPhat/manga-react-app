@@ -1,5 +1,4 @@
 .flex-widget {
-  background-color: #ffffff;
   margin-top: 20px;
   .flex-container {
     background-color: #ffffff;
@@ -29,5 +28,8 @@
     }
     .content {
     }
+  }
+  .no-background {
+    background-color: transparent;
   }
 }
